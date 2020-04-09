@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        
+        <link rel="icon" href="asset/img/icon.png">
+        
+        <link rel="stylesheet" href="asset/all.css">
+        <link rel="stylesheet" href="asset/main.css">
+    </head>
+    <body>
+    
+        <div class="main">
+            <div class="btn-box">
+                <button id="btn1" onclick="openHTML1()"><i class="fas fa-info"></i> About</button>                
+                <button id="btn2" onclick="openHTML2()"><i class="fas fa-university"></i> Education</button>
+                <button id="btn3" onclick="openHTML3()"><i class="fas fa-pencil-ruler"></i> Know</button>
+                <button id="btn4" onclick="openHTML4()"><i class="fas fa-address-book"></i> Address</button>
+            </div>
+            
+            <div id="content1" class="content">
+                
+                <div class="content-left">
+                    <h1>Zahid Hasan</h1>
+                    <p>Hi. This is Zahid Hasan, I am Frontend Design And back end developer. I like to Make web based project ideas. I am study at CSE. </p>
+                </div>
+                
+                <div class="content-right">
+                    <img src="asset/img/zahid.jpg" alt="Zahid">
+                </div>
+                
+            </div>
+            
+            <div id="content2" class="content">
+                
+                <div class="content-left">
+                    <div class="school">
+                        <h1>SSC</h1>
+                        <p>passing year: 2012</p>
+                        
+                    </div>
+                    
+                    <div class="school">
+                        <h1>Diploma</h1>
+                        <p>passing year: 2017</p>
+                        
+                    </div>
+                    
+                    <div class="school">
+                        <h1>BSC</h1>
+                        <p>passing year: --</p>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="content-right">
+                    <img src="asset/img/Education.jpg" alt="Zahid">
+                </div>
+                
+            </div>
+            
+            
+            <div id="content3" class="content">
+                
+                <div class="content-left">
+                    <div class="school">
+                        <h1>WEB</h1>
+                        <p>HTML, CSS, PHP, javascript, Python.</p>                        
+                        
+                    </div>
+                    
+                    <div class="school">
+                        <h1>Design</h1>
+                        <p>Photoshop, Illustrator, Adobe XD. </p>
+                        
+                    </div>
+                    
+                    <div class="school">
+                        <h1>Hardware and Software</h1>
+                        <p>PC And Leptop.</p>                        
+                    </div>
+                    
+                </div>
+                
+                <div class="content-right">
+                    <img src="asset/img/know.jpg" alt="Zahid">
+                </div>
+                
+            </div>
+            
+            <div id="content4" class="content">
+                
+                <div class="content-left">
+                    <div class="school">
+                        <h1>Phone</h1>
+                        <p>+8801900000436</p>                        
+                        
+                    </div>
+                    
+                    <div class="school">
+                        <h1>Email</h1>
+                        <p>zahidtree@gmail.com</p>
+                        
+                    </div>
+                    
+                    <div class="school">
+                        <h1>Home</h1>
+                        <p>155/1 Dhaka, Bangladesh</p>                        
+                    </div>
+                    
+                </div>
+                
+                <div class="content-right">
+                    <img src="asset/img/map.jpg" alt="Zahid">
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <script>
+            
+            var content1 = document.getElementById("content1")
+            var content2 = document.getElementById("content2")
+            var content3 = document.getElementById("content3")
+            var content4 = document.getElementById("content4")
+            
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            var btn3 = document.getElementById("btn3")
+            var btn4 = document.getElementById("btn4")
+            
+            
+            function openHTML1()
+            {
+                content1.style.transform = "translateX(0)";
+                content2.style.transform = "translateX(100%)";
+                content3.style.transform = "translateX(100%)";
+                content4.style.transform = "translateX(100%)";
+                
+                btn1.style.color = "mediumpurple";
+                btn2.style.color = "#000";
+                btn3.style.color = "#000";
+                btn4.style.color = "#000";
+                
+                content1.style.transitionDelay = "0.3s";
+                content2.style.transitionDelay = "0s";
+                content3.style.transitionDelay = "0s";
+                content4.style.transitionDelay = "0s";
+            }
+            
+            function openHTML2()
+            {
+                content1.style.transform = "translateX(100%)";
+                content2.style.transform = "translateX(0%)";
+                content3.style.transform = "translateX(100%)";
+                content4.style.transform = "translateX(100%)";
+                
+                btn1.style.color = "#000";
+                btn2.style.color = "mediumpurple";
+                btn3.style.color = "#000";
+                btn4.style.color = "#000";
+                
+                content1.style.transitionDelay = "0s";
+                content2.style.transitionDelay = "0.3s";
+                content3.style.transitionDelay = "0s";
+                content4.style.transitionDelay = "0s";
+            }
+            
+            function openHTML3()
+            {
+                content1.style.transform = "translateX(100%)";
+                content2.style.transform = "translateX(100%)";
+                content3.style.transform = "translateX(0%)";
+                content4.style.transform = "translateX(100%)";
+                
+                btn1.style.color = "#000";
+                btn2.style.color = "#000";
+                btn3.style.color = "mediumpurple";
+                btn4.style.color = "#000";
+                
+                content1.style.transitionDelay = "0s";
+                content2.style.transitionDelay = "0s";
+                content3.style.transitionDelay = "0.3s";
+                content4.style.transitionDelay = "0s";
+            }
+            
+            function openHTML4()
+            {
+                content1.style.transform = "translateX(100%)";
+                content2.style.transform = "translateX(100%)";
+                content3.style.transform = "translateX(100%)";
+                content4.style.transform = "translateX(0%)";
+                
+                btn1.style.color = "#000";
+                btn2.style.color = "#000";
+                btn3.style.color = "#000";
+                btn4.style.color = "mediumpurple";
+                
+                content1.style.transitionDelay = "0s";
+                content2.style.transitionDelay = "0s";
+                content3.style.transitionDelay = "0s";
+                content4.style.transitionDelay = "0.3s";
+            }
+            
+        </script>
+
+    </body>
+</html>
+
+

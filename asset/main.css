@@ -1,0 +1,135 @@
+
+@font-face
+{
+    src: url(/asset/font/Roboto.ttf);
+    font-family: Roboto;
+}
+
+@font-face
+{
+    src: url(/asset/font/Roboto-Bold.ttf);
+    font-family: Roboto-B;
+}
+
+@font-face
+{
+    src: url(/asset/font/Zhi.ttf);
+    font-family: Zh;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+
+.main
+{
+    width: 80%;
+    height: 450px;
+    position: relative;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+.btn-box
+{
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-box button
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Roboto-b;
+}
+
+
+.btn-box .fas
+{
+    margin-right: 10px;
+}
+
+.btn-box button:hover .fas
+{
+    color: mediumpurple;
+}
+
+
+.content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 0.3s;
+} 
+
+.content img
+{
+    width: 350px;
+}
+
+.content h1
+{
+    font-weight: 400;
+    color: mediumpurple;
+}
+
+.content p
+{
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+.content-left
+{
+    flex-basis: 50%;
+    width: 50vw;
+}
+
+.content-right
+{
+    flex-basis: 50%;
+    width: 40vw;
+    text-align: center;
+}
+
+
+.content .school
+{
+    margin: 10px 0;
+}
+
+.content .school p
+{
+    padding: 6px 15px;
+}
+
+#content1
+{
+    transform: translateX(0px);
+}
+
+#btn1
+{
+    color: mediumpurple;
+}
+
+
+
+
+
+
+
